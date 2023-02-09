@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style type="text/css">
+ @import 'https://fonts.googleapis.com/css?family=Raleway';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500&family=Montserrat:wght@500&family=Poppins:wght@500&family=Roboto+Condensed:wght@300&display=swap');
+     body{background-image:url("u1.png");background-size: cover; position:absolute;}
+   body {
+  font-family: 'Raleway';
+  padding: 0;
+  margin: 0;
+}
+
+
+
+h2 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 300;
+  color: white;
+  padding: 8px;
+}
+
+.center {
+  text-align: center;
+}
+
+
+/* NAVIGATION */
+nav {
+  display: inline-block;
+  float:right;
+  background: transparent;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 13px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+
+
+
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1; float:right;
+}
+nav.shift ul li a:hover {
+  color: white; float:right;
+}
+nav.shift ul li a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: right;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #A33524;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+  .floating{animation-name:floating; animation-duration:3s; animation-iteration-count: infinite; animation-timing-function:ease-in-out; margin-left:30px; margin-top:5px;}
+
+   @keyframes floating{ 0%{transform:translate(0, 0px);} 50%{transform:translate(0, 15px);}100%{transform:translate(0, -0px);}}
+
+  .grow img{
+transition: 1s ease;
+}
+
+.grow img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+
+.val{box-shadow: 2px 2px 3px black; border-radius: 20px; border: 2px groove white; border-width:thick; padding: 20px; width:315px; height: 37px;  background-color: rgba(0,0,0,0);}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #a33524;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #a33524; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#a33524; }
+
+ </style>
+
+<div style="float:right; margin-left:-30%; margin-top:2%; margin-right:-68%">
+<nav class="shift">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="find.html">Book Search</a></li>
+      <li><a href="picks">Top Picks</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+</div>
+</head>
+
+
+<body>
+
+<div class="grow">
+<a href="index.html"><img style="margin-left:3%; margin-top:4%" src="z2.png" width="80"></a>
+</div>
+
+<img style="margin-left:89%; position:absolute; margin-top:80%" src="ee.png" width="4">
+
+<img style="margin-left:91%; position:absolute; margin-top:4%" src="line.png" width="4">
+
+<img style="margin:auto; margin-left:107%; margin-top:9%" src="u3.png" width="350">
+
+<ul style="margin:auto; margin-left:104%; margin-top:8%; position:absolute; white-space:nowrap; list-style-type:none;font-size:2em">
+<li><a href="https://linus.highpoint.edu/~jallah/ProjectOne/index.html">About Me Website</a></li>
+<li><a href="https://linus.highpoint.edu/~jallah/FinalProject/index.html">Sci-Fi Website</a></li>
+<li><a href="https://linus.highpoint.edu/~jallah/forphp/madindex.html">MadLibs Website</a></li>
+</br></br>
+<li><a href="index.html"><img src="back2.png" width="300"></a></li>
+
+</ul>
+<img style="margin-left:25%; margin-top:-7%; position:absolute" src="cs1.png" width="350">
+
+<form>
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+
+<div class="grow">
+  <input style="margin-left:17%" type="image" src="ss1.png" width="270">
+</div>
+</form>
+<footer>
+<small style="color:white; margin:center"<em>&copy; 2022 Joellen Allah-Mensah</em></small>
+</footer>
+</body>
+</html>
